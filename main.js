@@ -2,6 +2,7 @@ let startButton = document.querySelector(".start-reset-button");
 let gameState = false;
 let answer = 0;
 let time = 60;
+let score = 0;
 
 startButton.addEventListener("click",function(){
     if(!gameState){
@@ -64,7 +65,10 @@ function loadChoices(){
 function checkAnswer(obj){
     if(obj.innerHTML == answer){
         let correctBox = document.querySelector(".correct-alert");
+        let scoreBox = document.querySelector(".score-value");
+        score+=1;
         correctBox.classList.add("show");
+        scoreBox.innerHTML=score;
         setTimeout(() => {
             correctBox.classList.remove("show");
         }, 1000);
