@@ -1,0 +1,84 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(#eee,#fff);
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    padding:1rem 0.5rem;
+    background: #CCE6F5;
+    border-radius: 4px;
+}
+
+.game-wrapper{
+    width:600px;
+    height:600px;
+    background-color: #97CDEA;
+    border-radius: 20px;
+    position: relative;
+}
+
+.game-wrapper .score-box{
+    position: absolute;
+    right:20px;
+    top:15px;
+    background-color: #F2F68E;
+    padding:10px;
+}
+
+.game-wrapper .question-box{
+    height:200px;
+    width:400px;
+    background-color: #99A3EC;
+    margin:100px auto 10px auto;
+    font-size:70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game-wrapper .prompt-box{
+    height:50px;
+    width:400px;
+    margin:0 auto;
+    background-color: #B589D9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.choices {
+    display: flex;
+    justify-content: space-between;
+    margin:10px auto 10px auto;
+    width:400px;
+}
+
+.choices > div {
+    width:70px;
+    height:70px;
+    background-color: #fff;
+}
+
+.start-reset-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.time-box{
+    position:absolute;
+    bottom:10px;
+    right:20px;
+    padding:0.5rem 1rem;
+    background-color: lime;
+    color:#333;
+}
