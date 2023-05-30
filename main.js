@@ -90,13 +90,23 @@ function startTimer(){
         if(time != 0){
             time-=1;
         }
-        else
+        else{
             clearInterval(interval);
+            displayGameOver();
+        }
+            
         
         timebox.innerHTML=time;
     }, 1000);
 }
 
+function displayGameOver(){
+    let gameoverScreen = document.querySelector('.gameover-screen');
+    let finalScore = document.querySelector(".final-score");
+    gameoverScreen.classList.add("show-flex");
+    finalScore.innerHTML = score;
+    
+}
 
 
 
