@@ -7,8 +7,14 @@ startButton.addEventListener("click",function(){
     if(!gameState){
         init();
         startButton.innerHTML="Reset";
+        gameState = true;
+    }
+    else{
+        location.reload();
     }
 })
+
+
 
 function init(){
 
