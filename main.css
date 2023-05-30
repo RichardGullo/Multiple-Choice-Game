@@ -82,3 +82,31 @@ body{
     background-color: lime;
     color:#333;
 }
+
+.correct-alert{
+    position:absolute;
+    top:10px;
+    left:250px;
+    padding:0.5rem 1rem;
+    background:lime;
+    color:#333;
+    display: none;
+}
+
+.wrong-alert{
+    position: absolute;
+    top:10px;
+    left:250px;
+    padding:0.5rem 1rem;
+    background-color: red;
+    color:#333;
+    display: none;
+}
+
+.hide{
+    display: none;
+}
+
+.show{
+    display: block;
+}

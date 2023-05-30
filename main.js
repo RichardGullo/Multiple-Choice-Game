@@ -57,11 +57,21 @@ function loadChoices(){
 
 function checkAnswer(obj){
     if(obj.innerHTML == answer){
-        console.log("correct!");
+        let correctBox = document.querySelector(".correct-alert");
+        correctBox.classList.add("show");
+        setTimeout(() => {
+            correctBox.classList.remove("show");
+        }, 1000);
         nextQuestion();
     }
-    else
-        console.log("wrong answer. Try Again");
+    else{
+        let errorBox = document.querySelector(".wrong-alert");
+        errorBox.classList.add("show");
+        setTimeout(() => {
+            errorBox.classList.remove("show");
+        }, 1000);
+    }
+        
 }
 
 function startTimer(){
